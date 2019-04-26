@@ -30,4 +30,6 @@ Username/Email: [your domain secret API key]
 Password/Key: [your domain secret API key]
 </pre>
 7. Click 'OK'
-※ Reference: https://forum.synology.com/enu/viewtopic.php?t=70027
+
+## Reference
+* https://forum.synology.com/enu/viewtopic.php?t=70027
