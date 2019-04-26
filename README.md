@@ -4,10 +4,11 @@ If you're maintaining your domain on Linode, you can use this script to manage D
 
 ## Installation Guide
 
-### Linode
+### On Linode
 1. Connect linode.com using your web browser
 2. Log in your account
-3. Click 'My profile' -> 'API Tokens'
+3. Add a A record hostname ('Domains' -> [your domain name] -> Add an A/AAAA Record -> .... -> Save)
+3. Then Go to 'My profile' -> 'API Tokens'
 4. Click 'Add a Personal Access Token'
 <pre>
 Label: [any name you want.  i.e. DDNS]
@@ -17,7 +18,7 @@ Access: Domains = Read/Write
 5. Click 'Submit'
 6. Then you can see access token. write it down.
 
-### DSM
+### On DSM
 1. Connect to your DSM using SSH terminal client (Putty on Windows)
 2. Be root
 <pre>
