@@ -3,6 +3,21 @@
 If you're maintaining your domain on Linode, you can use this script to manage DDNS.
 
 ## Installation Guide
+
+### Linode
+1. Connect linode.com using your web browser
+2. Log in your account
+3. Click 'My profile' -> 'API Tokens'
+4. Click 'Add a Personal Access Token'
+<pre>
+Label: [any name you want.  i.e. DDNS]
+Expiry: Never
+Access: Domains = Read/Write
+</pre>
+5. Click 'Submit'
+6. Then you can see access token. write it down.
+
+### DSM
 1. Connect to your DSM using SSH terminal client (Putty on Windows)
 2. Be root
 <pre>
@@ -26,8 +41,8 @@ chmod 755 linode.php
 <pre>
 Service provider: Linode
 Hostname: [your DDNS hostname].[your domain]
-Username/Email: [your domain secret API key]
-Password/Key: [your domain secret API key]
+Username/Email: [your linode domain access token]
+Password/Key: [your linode domain access token]
 </pre>
 7. Click 'OK'
 
